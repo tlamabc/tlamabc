@@ -4,7 +4,7 @@
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
 
 ## 
-Hello ✌️. My name is Lam, and this is the profile of a very professional intern/fresh.
+Hello ✌️. My name is Lam, and this is the profile of a very professional intern/fresher.
 
 
 ##
