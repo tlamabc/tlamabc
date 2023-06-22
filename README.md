@@ -8,7 +8,7 @@ Hello ✌️. My name is Lam, and this is the profile of a very professional int
 
 
 ##
-| ![1](https://media.giphy.com/media/UbbPsL95nT0T6tKrIw/giphy.gif) | ![2](https://media0.giphy.com/media/WUBvquKnbnXhbQUd8f/giphy.gif?cid=ecf05e47d67685c5a3576e7b7d500e1297fa39551ced9b59&rid=giphy.gif) | ![3](https://media1.giphy.com/media/Y07ur2ElqAvSqVNauQ/giphy.gif) |
+| ![1](https://media.giphy.com/media/UbbPsL95nT0T6tKrIw/giphy.gif) | ![2](https://media.giphy.com/media/l49K1Nh2DbGH4QMoM/giphy.gif) | ![3](https://media.giphy.com/media/HPeLSXWtdnUzK/giphy.gif) |
 | --- | --- | --- |
 ## 🌐Socials
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/tlawzz) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/tlam.jpg/?theme=dark) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/tlamabc/) 
