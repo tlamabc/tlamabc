@@ -1,7 +1,7 @@
 
 # 💻Tech Stack
 ## 
-Hello ✌️. My name is Lam, and this is the profile of a very professional intern/fresher.
+Hello ✌️. My name is Lam, and this is the profile of a very professional fresher.
 
 
 ##
