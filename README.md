@@ -1,103 +1,73 @@
-# Dang Thanh Lam 🇻🇳  
-**Backend / DevOps Engineer**  
-📍 Ho Chi Minh City, Vietnam  
-📞 +84 359 001 647  
-📧 dangthanhlam1312@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/tlamabc/)  
-🏷️ #OpenToWork #DevOps #Golang #Docker #CI/CD #NodeJS #IoT #Fullstack
+# Dang Thanh Lam
+
+**Infrastructure & DevOps Engineer | Cloud & Automation Enthusiast**  
+Email: dangthanhlam1312@gmail.com | Phone: +84-359-001-647  
+GitHub: [github.com/tlamabc](https://github.com/tlamabc) | LinkedIn: [linkedin.com/in/tlamabc](https://linkedin.com/in/tlamabc)
 
 ---
 
-## 👨‍💻 Summary
+## Professional Summary
 
-Passionate Backend & DevOps Engineer with hands-on experience building scalable infrastructure, full-stack platforms, and automation pipelines.  
-Proficient in Docker, CI/CD, Kubernetes (K3s), and microservices architecture. Comfortable bridging operations and development, especially for startups and lean teams.
-
----
-
-## 🚀 Key Achievements
-
-- ✅ **50% faster deployments** by optimizing GitLab CI/CD pipelines.
-- ✅ **30% API performance boost** with RabbitMQ-based async queue.
-- ✅ **Saved 20% infra cost** by migrating from paid CMS to Xibo open-source.
-- ✅ **Improved team productivity by 40%** via streamlined LarkBase workflows.
+DevOps Engineer with hands-on experience in cloud infrastructure (AWS), container orchestration (Kubernetes, Docker), CI/CD automation, and infrastructure as code (Terraform, Ansible). Skilled in designing scalable, resilient systems and automating deployment pipelines to achieve zero downtime. Strong background bridging software development and operations to ensure rapid and reliable software delivery.
 
 ---
 
-## 🧠 Skills
+## Skills
 
-**DevOps / Infra:** Docker, Docker Compose, GitLab CI, Kubernetes (K3s), Rancher, Linux, SSL setup, Monitoring (Prometheus + Grafana), domain + port + env config.  
-**Backend:** Node.js, PHP (Twig), RabbitMQ, RESTful API, role-based access, MySQL/PostgreSQL, MongoDB, Firebase.  
-**Mobile / UI:** Flutter (basic), Android app decompiling, UI localization.  
-**Tools:** Git, VSCode, Neovim, Excel (custom .po localization), LarkBase, n8n, ThingsBoard.
-
----
-
-## 💼 Experience
-
-### **ICSP Company** — *Full-cycle Backend & DevOps Engineer*  
-📍 Ho Chi Minh City | ⏱️ 08/2024 – Present  
-**Projects:** SmartPetro Platform, SSignage Digital CMS  
-- Built full CI/CD pipelines with Docker & GitLab CI.
-- Developed Node.js APIs with CORS & role-based control.
-- Deployed RabbitMQ for tax queue processing.
-- Replaced paid CMS with customized Xibo (PHP + Twig), localized via `.po/.mo`.
-- Managed domain routing, backup, environment standardization.
-- Integrated Grafana/Prometheus + Telegram alerts for monitoring.
-- Decompiled Android CMS app, rewrote activities, and localized UI for end users.
+- **Cloud & IaC:** AWS (EC2, S3, IAM), Terraform, Ansible  
+- **Containers & Orchestration:** Docker, Kubernetes (K3s via Rancher), Docker Swarm  
+- **CI/CD & Automation:** GitLab CI/CD, GitHub Actions  
+- **Backend:** Node.js, REST API development, Supabase, Firebase  
+- **Monitoring & Alerting:** Prometheus, Grafana, CloudWatch, Telegram alerts  
+- **Networking & Virtualization:** HAProxy, Nginx, Apache, VMware ESXi  
+- **Databases & Messaging:** PostgreSQL, MongoDB, RabbitMQ  
 
 ---
 
-### **5Sao - Fivess** — *Business Analyst*  
-📍 Da Nang | ⏱️ 05/2024 – 07/2024  
-- Designed DB diagrams, planned tasks on LarkBase.
-- Fixed Flutter bugs returned from outsource.
-- Built development environment & basic CI/CD pipelines.
+## Experience
+
+### Linux DevOps Engineer  
+*iCSP Company, Ho Chi Minh City, Vietnam*  
+**Jul 2024 – Aug 2025**
+
+- Developed and optimized automated CI/CD pipelines with GitLab CI, reducing deployment times from 30 to under 5 minutes.  
+- Managed container orchestration using Docker and Kubernetes (K3s via Rancher) on Ubuntu, achieving zero-downtime rolling deployments.  
+- Performed on-site hardware inspections and troubleshooting at VNPT IDC data centers.  
+- Designed and implemented Node.js RESTful APIs for IoT data ingestion and real-time telemetry processing (hex-to-JSON parsing).  
+- Architected microservices with PostgreSQL and RabbitMQ for asynchronous processing and schema migrations.  
+- Deployed and secured web applications with Nginx/Apache and automated SSL provisioning via Let’s Encrypt.  
+- Configured HAProxy for advanced traffic routing; managed VMware ESXi virtualization infrastructure.  
+- Automated system configuration and deployments using Ansible playbooks.
+
+### Software Engineer Intern  
+*Fivess., JSC, Da Nang, Vietnam*  
+**May 2024 – Jul 2024**
+
+- Collaborated with project managers to design database schemas and define tasks using LarkBase.  
+- Fixed bugs and managed Flutter app deployment pipeline with CI/CD automation.
+
+### Web Developer Intern  
+*Lania Co., Ltd, Da Nang, Vietnam*  
+**Sep 2023 – May 2024**
+
+- Developed a cross-platform booking app; migrated from Android Native to Flutter framework.  
+- Transitioned backend from Firebase to Node.js microservices with MongoDB; built internal web modules and reports.
 
 ---
 
-### **Lania Co., Ltd** — *Fresher Flutter Developer*  
-📍 Da Nang | ⏱️ 01/2024 – 06/2024  
-- Built multi-platform booking app (Android/iOS).
-- Migrated from Firebase to Node.js + MongoDB for cost efficiency.
+## Projects
+
+- Provisioned AWS infrastructure using Terraform to manage EC2, S3, and IAM policies in lab environment.  
+- Automated server setup and application deployments with Ansible playbooks.  
+- Built AWS CloudWatch dashboards and alarms for infrastructure monitoring.  
+- Integrated Supabase for authentication and data storage in personal projects.
 
 ---
 
-### **Lania Co., Ltd** — *PHP Developer Intern*  
-📍 Da Nang | ⏱️ 08/2023 – 01/2024  
-- Trained in backend PHP, wrote APIs, built web reports.
-- Practiced OOP, DB design, business analysis, UI prototyping.
+## Education
 
----
+**University of Information Technology (UIT)** — Bachelor’s in Information Technology  
+_Feb 2025 – Present_
 
-### **Mirae Asset Vietnam** — *Sales Staff (Non-Tech)*  
-📍 Da Nang | ⏱️ 01/2022 – 12/2022  
-- Conducted customer outreach, fanpage content, and loan processing.
-
----
-
-## 🎓 Education
-
-**FPT Polytechnic Danang**  
-*Mobile Application Development* — 07/2021 – 03/2024
-
-**University of Information Technology (UIT)**  
-*Computer & Information Sciences (Ongoing)* — From 02/2025
-
----
-
-## 📂 Projects Showcase (On Request or via GitHub/Portfolio)
-
-- `SStorage - SSignage CMS`: Multi-container CMS platform with customized Xibo.
-- `IoT Flow Monitoring`: NB-IoT integration for hospital oxygen tanks (UDP → ThingsBoard).
-- `Remote Dashboard Infra`: Internal system using Express + React + Docker (network-isolated APIs).
-- `Workflow Automation`: n8n-based Telegram chatbot with event-driven flow.
-
----
-
-## 🤝 Let's Connect
-
-I'm actively looking for opportunities in **DevOps**, **Backend (Golang/Node.js)**, or **IoT Integration Engineering**.  
-Open to product companies, startups, or remote-first teams.  
-👉 Ping me at **dangthanhlam1312@gmail.com** or [LinkedIn](https://www.linkedin.com/in/tlamabc/)
-
+**FPT Polytechnic College** — Associate Degree in Information Technology (GPA: 3.2)  
+_Aug 2021 – May 2024_
