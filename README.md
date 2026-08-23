@@ -1,73 +1,51 @@
-# Dang Thanh Lam
+# Hi there, I'm Dang Thanh Lam 👋
 
-**Infrastructure & DevOps Engineer | Cloud & Automation Enthusiast**  
-Email: dangthanhlam1312@gmail.com | Phone: +84-359-001-647  
-GitHub: [github.com/tlamabc](https://github.com/tlamabc) | LinkedIn: [linkedin.com/in/tlamabc](https://linkedin.com/in/tlamabc)
+### 🚀 System Engineer | Data Center & Infrastructure Specialist
 
----
-
-## Professional Summary
-
-DevOps Engineer with hands-on experience in cloud infrastructure (AWS), container orchestration (Kubernetes, Docker), CI/CD automation, and infrastructure as code (Terraform, Ansible). Skilled in designing scalable, resilient systems and automating deployment pipelines to achieve zero downtime. Strong background bridging software development and operations to ensure rapid and reliable software delivery.
+I am a Systems & DevOps Engineer with a solid foundation in Software Engineering. My expertise spans from **Layer 1 Physical Data Center Operations** (bare-metal, cabling, network switches) up to **Layer 7 Application Delivery & Security** (Kubernetes, WAF, Enterprise Monitoring).
 
 ---
 
-## Skills
+## 🛠️ Technical Skill Set
 
-- **Cloud & IaC:** AWS (EC2, S3, IAM), Terraform, Ansible  
-- **Containers & Orchestration:** Docker, Kubernetes (K3s via Rancher), Docker Swarm  
-- **CI/CD & Automation:** GitLab CI/CD, GitHub Actions  
-- **Backend:** Node.js, REST API development, Supabase, Firebase  
-- **Monitoring & Alerting:** Prometheus, Grafana, CloudWatch, Telegram alerts  
-- **Networking & Virtualization:** HAProxy, Nginx, Apache, VMware ESXi  
-- **Databases & Messaging:** PostgreSQL, MongoDB, RabbitMQ  
-
----
-
-## Experience
-
-### Linux DevOps Engineer  
-*iCSP Company, Ho Chi Minh City, Vietnam*  
-**Jul 2024 – Aug 2025**
-
-- Developed and optimized automated CI/CD pipelines with GitLab CI, reducing deployment times from 30 to under 5 minutes.  
-- Managed container orchestration using Docker and Kubernetes (K3s via Rancher) on Ubuntu, achieving zero-downtime rolling deployments.  
-- Performed on-site hardware inspections and troubleshooting at VNPT IDC data centers.  
-- Designed and implemented Node.js RESTful APIs for IoT data ingestion and real-time telemetry processing (hex-to-JSON parsing).  
-- Architected microservices with PostgreSQL and RabbitMQ for asynchronous processing and schema migrations.  
-- Deployed and secured web applications with Nginx/Apache and automated SSL provisioning via Let’s Encrypt.  
-- Configured HAProxy for advanced traffic routing; managed VMware ESXi virtualization infrastructure.  
-- Automated system configuration and deployments using Ansible playbooks.
-
-### Software Engineer Intern  
-*Fivess., JSC, Da Nang, Vietnam*  
-**May 2024 – Jul 2024**
-
-- Collaborated with project managers to design database schemas and define tasks using LarkBase.  
-- Fixed bugs and managed Flutter app deployment pipeline with CI/CD automation.
-
-### Web Developer Intern  
-*Lania Co., Ltd, Da Nang, Vietnam*  
-**Sep 2023 – May 2024**
-
-- Developed a cross-platform booking app; migrated from Android Native to Flutter framework.  
-- Transitioned backend from Firebase to Node.js microservices with MongoDB; built internal web modules and reports.
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Observability & Monitoring** | CheckMK (MSP/Free), Nagios (Async), Cacti, Prometheus, ELK Stack, SNMP, Auto-Ticket & Call APIs |
+| **Data Center & Systems** | Spine-Leaf & 3-Tier Architectures, Bare-Metal Racking/Power/Optics, ToR Switches, VMware ESXi |
+| **DevOps & Cloud-Native** | Kubernetes, Docker Swarm, ArgoCD, Helm, GitOps, Ansible, GitLab CI/CD, HAProxy, RabbitMQ |
+| **Security & Infrastructure** | BunkerWeb WAF, ModSecurity, OWASP CRS, Local LLM Incident Analysis (Ollama), Platform Hardening |
+| **Homelab & Virtualization** | Proxmox VE (Intel Xeon 24-Core), Hardware Virtualization, L2/L3 Switching, Reverse SSH Tunneling via VPS |
 
 ---
 
-## Projects
+## 💼 Professional Experience Overview
 
-- Provisioned AWS infrastructure using Terraform to manage EC2, S3, and IAM policies in lab environment.  
-- Automated server setup and application deployments with Ansible playbooks.  
-- Built AWS CloudWatch dashboards and alarms for infrastructure monitoring.  
-- Integrated Supabase for authentication and data storage in personal projects.
+* **System Engineer @ FPT Telecom** *(09/2025 – Present)*
+  * Architecting enterprise observability (CheckMK MSP, Nagios Async, Multi-Poller models).
+  * Managing bare-metal Data Center hardware, VMware ToR networking, and 24x7 incident response.
+  * Standardizing SLA/OLA frameworks across multiple telecom divisions and driving GitOps deployments via ArgoCD & Helm.
+
+* **Associate DevOps Engineer @ iCSP Company** *(07/2024 – 08/2025)*
+  * Optimized GitLab CI/CD pipelines, cutting deployment times from 30m to <5m.
+  * Partnered with domestic SMEs and outsourcing clients for server provisioning and small-scale network infrastructure.
+  * Developed real-time IoT telemetry ingestion backends (Node.js, RabbitMQ, PostgreSQL).
 
 ---
 
-## Education
+## 🎓 Academic Research & Key Projects
 
-**University of Information Technology (UIT)** — Bachelor’s in Information Technology  
-_Feb 2025 – Present_
+* **Open-Source WAF with AI Security Analysis (UIT Graduation Thesis)**
+  * Built an automated security pipeline combining **BunkerWeb/ModSecurity** with a **Local LLM (Ollama)** for real-time threat classification and root-cause analysis.
+* **Data Center Architecture Benchmark (UIT Thesis)**
+  * Simulated and benchmarked **Spine-Leaf vs. 3-Tier Data Center** topologies on GNS3.
+* **Mobile & Backend Infrastructure (FPT Polytechnic Capstone Lead)**
+  * Led mobile app development using Android & Firebase, powered by a self-hosted **Supabase** instance.
 
-**FPT Polytechnic College** — Associate Degree in Information Technology (GPA: 3.2)  
-_Aug 2021 – May 2024_
+---
+
+## 📬 Connect With Me
+
+- **Email:** [dangthanhlam1312@gmail.com](mailto:dangthanhlam1312@gmail.com)
+- **LinkedIn:** [linkedin.com/in/tlamabc](https://linkedin.com/in/tlamabc)
+- **Phone:** +84-359-001-647
+- **Location:** Ho Chi Minh City, Vietnam
