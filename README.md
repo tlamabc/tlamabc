@@ -1,290 +1,583 @@
 # 👋 Hi, I'm Dang Thanh Lam
 
-### System Engineer | Data Center & Infrastructure | DevOps
+## System Engineer | Data Center & Infrastructure | Monitoring & DevOps
 
-System Engineer with a background in Software Application Development, transitioning into **Telecom Infrastructure, Data Center Operations, Observability, and DevOps**.
+System Engineer specializing in **Enterprise Monitoring, Data Center Infrastructure, Kubernetes, DevOps, and Infrastructure Operations**.
 
-My work focuses on infrastructure from **Layer 1 to Layer 7** — from physical servers, racks, cabling, power, and network infrastructure to Kubernetes applications, monitoring, automation, and security.
+My experience spans infrastructure from **Layer 1 to Layer 7** — from physical servers, racks, power, cabling, sensors, and network infrastructure to virtualization, Kubernetes, monitoring, security, and applications.
 
 ---
 
 ## 🧑‍💻 About Me
 
-* 🏢 **System Engineer at FPT Telecom**
-* 🎓 Bachelor of Science in Information Technology — **University of Information Technology (UIT), VNU HCM**
-* 🎓 Associate Degree in Software Engineering — **FPT Polytechnic College Da Nang**
-* ☁️ Focused on **Private Cloud, Data Center Infrastructure, Observability & DevOps**
-* 🖥️ Experienced with **Bare-metal Servers, ToR Networking, VMware, Kubernetes and GitOps**
-* 📊 Interested in **Enterprise Monitoring and Infrastructure Automation**
-* 🔐 Working with **WAF, System Hardening and Security Analysis**
-* 🏠 Running a personal **Proxmox Homelab** for infrastructure experimentation
+- 💼 **System Engineer at FPT Telecom**
+- 📊 **CheckMK_MSP Administrator for FPT Telecom ISP infrastructure**
+- 🏢 Focused on **Enterprise Monitoring & Observability**
+- 🖥️ Experienced with **Data Center & Bare-metal Infrastructure**
+- ☸️ Working with **Kubernetes, GitOps, Docker and Rancher**
+- ⚙️ Infrastructure automation with **Ansible & GitLab CI/CD**
+- 🔐 Infrastructure security, hardening and access control
+- 📡 Network and telemetry infrastructure
+- 🏠 Self-hosting and infrastructure experimentation with **Proxmox VE**
 
 ---
 
-## 🚀 What I Do
+# 🚀 Core Areas
 
-### 📊 Observability & Monitoring
+## 📊 Enterprise Monitoring & Observability
 
-I work on enterprise monitoring infrastructure and observability systems, including:
+One of my main responsibilities is administering and improving enterprise monitoring infrastructure.
 
-* Enterprise Monitoring Platforms
-* Cacti
-* Prometheus
-* ELK Stack
-* SNMP
-* Metric Exporters
-* Custom Telemetry Relays
-* Automated Ticketing & Calling APIs
-* Dynamic Monitoring Thresholds
+### CheckMK_MSP
 
-I've worked on optimizing legacy polling infrastructure by refactoring polling scripts into **asynchronous active checks**, helping eliminate zombie processes and reduce server overhead.
+I administer **CheckMK_MSP** monitoring infrastructure for the **FPT Telecom ISP environment**, covering monitoring operations and infrastructure observability.
 
-I also worked on re-architecting polling infrastructure into a **distributed Master-Slave model** to address disk I/O bottlenecks.
+Responsibilities include:
 
----
+- CheckMK_MSP administration
+- Host and service monitoring
+- Monitoring infrastructure operations
+- SNMP-based monitoring
+- Monitoring configuration
+- Alerting and incident visibility
+- Monitoring integration with infrastructure services
+- Polling infrastructure optimization
+- Monitoring availability and reliability
 
-### 🖥️ Data Center & Systems
+The monitoring environment is designed to support large-scale ISP infrastructure and operational requirements.
 
-Experienced with physical and virtualized infrastructure operations:
+### Other Monitoring Technologies
 
-* Bare-metal Server Operations
-* Server Racking & Relocation
-* Hardware Sensor Management
-* Power Cabling
-* Component Replacement
-* Optical Troubleshooting
-* Console Routing
-* Top-of-Rack (ToR) Networking
-* VMware ESXi
-* Data Center Hardware Auditing
-
-I work across infrastructure layers from **physical hardware and networking to virtualized and containerized workloads**.
+- **CheckMK_MSP**
+- Cacti
+- Prometheus
+- ELK Stack
+- SNMP
+- Metric Exporters
+- Custom Telemetry
+- Auto-Ticket & Call APIs
 
 ---
 
-### ☸️ Kubernetes & GitOps
+# ⚙️ Monitoring Architecture & Optimization
 
-Working with cloud-native infrastructure and deployment automation:
+Worked on improving the performance and scalability of monitoring infrastructure.
 
-* Kubernetes
-* K3s
-* Docker
-* Docker Swarm
-* Rancher
-* ArgoCD
-* Helm
-* GitOps
-* Ansible
-* GitLab CI/CD
-* HAProxy
+### Async Polling
 
-At FPT Telecom, I have deployed applications on Kubernetes using **ArgoCD and Helm following GitOps practices**, with monitoring integration enforced for newly deployed services.
+Refactored legacy polling scripts into **asynchronous active checks** to reduce:
 
----
+- Zombie processes
+- Unnecessary process overhead
+- Polling server resource consumption
 
-### 🔐 Security & Infrastructure Hardening
+### Distributed Multi-Poller Architecture
 
-My infrastructure security experience includes:
+Investigated **Disk Stuck I/O bottlenecks** affecting monitoring workloads.
 
-* System Hardening
-* Access Control
-* BunkerWeb WAF
-* ModSecurity
-* OWASP CRS
-* Security Event Analysis
-* Local LLM-based Incident Analysis using Ollama
+Re-architected the polling infrastructure into a **distributed Master-Slave / Multi-Poller model** to distribute polling workloads and improve monitoring infrastructure scalability.
 
-My graduation thesis focuses on building an **Open-Source WAF with AI Security Analysis**, using BunkerWeb, ModSecurity and OWASP CRS together with a local LLM to analyze security events.
+```text
+                    Monitoring Platform
+                           │
+                           │
+                    ┌──────┴──────┐
+                    │   Master    │
+                    │  Monitoring │
+                    └──────┬──────┘
+                           │
+             ┌─────────────┼─────────────┐
+             │             │             │
+             ▼             ▼             ▼
+        Multi-Poller  Multi-Poller  Multi-Poller
+             │             │             │
+             ▼             ▼             ▼
+         Network        Servers       Services
+          Devices        Hosts        / Apps
+```
 
----
-
-### ⚙️ Automation & Integration
-
-I enjoy removing repetitive operational work through automation.
-
-Areas I've worked on include:
-
-* Infrastructure Inventory Synchronization
-* Network Port Inventory
-* Dynamic Monitoring Configuration
-* Automated Alerting
-* Ticketing API Integration
-* Calling API Integration
-* Ansible Playbooks
-* GitLab CI/CD
-* GitOps-based Deployment
+The objective is to avoid concentrating polling workloads on a single polling node and improve the overall reliability of the monitoring infrastructure.
 
 ---
 
-## 🔬 Academic & Engineering Projects
+# 🔐 Security & System Hardening
 
-### 🛡️ Open-Source WAF with AI Security Analysis
+Infrastructure security is another part of my engineering work.
 
-**Graduation Thesis — UIT, VNU HCM**
+### Monitoring Security
 
-Architected a WAF security analysis platform using:
+Worked on hardening monitoring platforms including:
 
-* BunkerWeb
-* ModSecurity
-* OWASP CRS
-* Ollama
-* Local LLM
+- **CheckMK_MSP**
+- Cacti
+- Web application security
+- Access control
 
-The system ingests security events and uses a local LLM to:
+Security areas include:
 
-* Classify attack vectors
-* Assess threat risks
-* Explain potential root causes
-* Analyze security events in real time
+- XSS
+- SQL Injection
+- Authentication & Access Control
+- Server Hardening
 
 ---
 
-### 🌐 Data Center Network Architecture Benchmark
+# 🛡️ WAF & Security Research
 
-**Academic Research**
+## Open-Source WAF with AI Security Analysis
 
-Simulation and benchmark of:
+**Graduation Thesis — University of Information Technology (UIT), VNU HCM**
 
-* Spine-Leaf Data Center Architecture
-* Traditional 3-Tier Data Center Architecture
+Architected an open-source Web Application Firewall security analysis platform using:
+
+- **BunkerWeb**
+- **ModSecurity**
+- **OWASP CRS**
+- **Ollama**
+- Local LLM
+
+The system analyzes security events and provides automated analysis of potential security threats.
+
+### Security Pipeline
+
+```text
+                    Incoming Request
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │  BunkerWeb  │
+                    │     WAF     │
+                    └──────┬──────┘
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │ ModSecurity │
+                    │  + OWASP CRS│
+                    └──────┬──────┘
+                           │
+                           ▼
+                    Security Events
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │   Ollama    │
+                    │   Local LLM │
+                    └──────┬──────┘
+                           │
+                           ▼
+                  Security Analysis
+```
+
+---
+
+# 🏢 Data Center & Systems
+
+Working with infrastructure from physical hardware to virtualization.
+
+### Data Center Operations
+
+- Bare-metal server operations
+- Server rack & relocation
+- Hardware sensor management
+- Power cabling
+- Optical troubleshooting
+- Component replacement
+- Remote console routing
+- ToR networking
+- Data center hardware auditing
+
+### Virtualization
+
+- VMware ESXi
+- Proxmox VE
+- Hardware virtualization
+
+---
+
+# 🌐 Network Infrastructure
+
+Experience with network infrastructure and Data Center network architecture.
+
+### Technologies & Concepts
+
+- L2 / L3 Switching
+- ToR Switching
+- Spine-Leaf Architecture
+- Traditional 3-Tier Architecture
+- Network Port Inventory
+- Optical troubleshooting
+- Console routing
+
+### Academic Research
+
+Simulated and benchmarked:
+
+```text
+Spine-Leaf Data Center Architecture
+                vs
+Traditional 3-Tier Architecture
+```
 
 using **GNS3**.
 
 ---
 
-### 📱 Mobile Application & Self-Hosted Backend
+# ☸️ Kubernetes & Cloud-Native
 
-**FPT Polytechnic Capstone Project — Team Lead**
+Working with containerized infrastructure and GitOps-based application deployment.
 
-Led full-stack mobile development using:
+### Kubernetes Stack
 
-* Android
-* Firebase
-* Supabase
+- Kubernetes
+- K3s
+- Rancher
+- Docker
+- Docker Swarm
 
-The project used a **self-hosted Supabase backend** for database management and real-time data synchronization.
+### GitOps
+
+- ArgoCD
+- Helm
+- GitLab CI/CD
+
+### Deployment Workflow
+
+```text
+        Developer
+            │
+            ▼
+        GitLab Repo
+            │
+            ▼
+       GitLab CI/CD
+            │
+            ▼
+      Container Image
+            │
+            ▼
+       Helm / GitOps
+            │
+            ▼
+          ArgoCD
+            │
+            ▼
+       Kubernetes
+            │
+            ▼
+        Monitoring
+```
+
+Deployed applications on Kubernetes using **ArgoCD + Helm following GitOps practices**, with monitoring requirements integrated into application deployment.
 
 ---
 
-### 📡 IoT Telemetry Backend
+# ⚙️ Automation & Integration
+
+I use automation to reduce repetitive operational work and improve infrastructure consistency.
+
+### Automation
+
+- Ansible
+- GitLab CI/CD
+- GitOps
+- Automated inventory synchronization
+- Monitoring configuration automation
+- Network port inventory synchronization
+
+### API Integration
+
+- Ticketing APIs
+- Calling APIs
+- Monitoring alert integration
+- Custom telemetry services
+
+---
+
+# 📡 IoT Telemetry
 
 Developed a Node.js RESTful telemetry ingestion service for real-time IoT packet processing.
 
-Technology stack:
+### Technology Stack
 
-* Node.js
-* REST API
-* RabbitMQ
-* PostgreSQL
-* Hex → JSON packet parsing
+- Node.js
+- REST API
+- RabbitMQ
+- PostgreSQL
+- Hex → JSON packet parsing
 
----
+### Architecture
 
-## 🏠 Homelab
-
-My homelab is used to experiment with infrastructure, virtualization, networking and self-hosted services.
-
-### Hardware
-
-* Proxmox VE
-* X99 Platform
-* Intel Xeon 24-Core
-* 32 GB RAM
-
-### Infrastructure
-
-* Hardware Virtualization
-* L2/L3 Switching
-* WiFi Integration
-* Reverse SSH Tunneling
-* Remote VPS
-* Secure Internet Exposure
-
----
-
-## 🧰 Technical Stack
-
-| Area                  | Technologies                                      |
-| --------------------- | ------------------------------------------------- |
-| **Monitoring**        | Cacti, Prometheus, ELK Stack, SNMP                |
-| **Observability**     | Metric Exporters, Custom Telemetry, Async Polling |
-| **Containers**        | Kubernetes, K3s, Docker, Docker Swarm             |
-| **GitOps**            | ArgoCD, Helm, GitLab CI/CD                        |
-| **Automation**        | Ansible                                           |
-| **Virtualization**    | VMware ESXi, Proxmox VE                           |
-| **Networking**        | Spine-Leaf, 3-Tier, ToR, L2/L3                    |
-| **Load Balancing**    | HAProxy                                           |
-| **Messaging**         | RabbitMQ                                          |
-| **Database**          | PostgreSQL, Firebase, Supabase                    |
-| **Security**          | BunkerWeb, ModSecurity, OWASP CRS                 |
-| **Security Analysis** | Ollama, Local LLM                                 |
-| **Infrastructure**    | Bare-metal Servers, Rack, Power, Optics           |
-| **Development**       | Java OOP, Android, Node.js REST API               |
+```text
+IoT Device
+    │
+    ▼
+Telemetry Packet
+    │
+    ▼
+Node.js REST API
+    │
+    ▼
+Packet Parsing
+Hex → JSON
+    │
+    ▼
+RabbitMQ
+    │
+    ▼
+PostgreSQL
+```
 
 ---
 
-## 📈 Infrastructure Experience
+# 🚀 DevOps Experience
 
-### FPT Telecom — System Engineer
-
-**09/2025 — Present**
-
-Working across:
-
-* Enterprise Observability
-* Monitoring Architecture
-* Data Center Operations
-* Bare-metal Infrastructure
-* Kubernetes & GitOps
-* Infrastructure Automation
-* SLA/OLA Standardization
-* 24/7 Operations & On-call
-
----
-
-### iCSP Company — Associate DevOps Engineer
+## Associate DevOps Engineer — iCSP Company
 
 **07/2024 — 08/2025**
 
-Worked on:
+Worked with:
 
-* GitLab CI/CD
-* Docker
-* K3s / Rancher
-* VMware ESXi
-* HAProxy
-* Ansible
-* Data Center Hardware Auditing
-* Server Provisioning
-* SME Infrastructure
-* IoT Telemetry Backend
+- GitLab CI/CD
+- Docker
+- K3s
+- Rancher
+- VMware ESXi
+- HAProxy
+- Ansible
+- Data Center infrastructure
+- IoT telemetry
 
-Built GitLab CI pipelines that reduced deployment time from approximately **30 minutes to under 5 minutes**.
+### CI/CD Optimization
 
----
+Built GitLab CI pipelines that reduced deployment time from:
 
-## 🎯 Current Direction
-
-I'm building my career around:
-
-**System Engineering → Infrastructure → Data Center → Observability → DevOps → Cloud-Native Infrastructure**
-
-I'm particularly interested in engineering reliable infrastructure systems rather than only deploying applications.
-
-My long-term certification roadmap includes:
-
-* CKA
-* CCNP
-* LFCS
+```text
+~30 minutes
+     │
+     ▼
+< 5 minutes
+```
 
 ---
 
-## 📫 Contact
+# 🏢 System Engineer Experience
 
-**Email:** [dangthanhlam1312@gmail.com](mailto:dangthanhlam1312@gmail.com)
+## FPT Telecom
 
-**LinkedIn:** [linkedin.com/in/tlamabe](https://linkedin.com/in/tlamabe)
+**System Engineer — 09/2025 → Present**
+
+Main areas:
+
+### Observability & Monitoring
+
+- Enterprise monitoring systems
+- **CheckMK_MSP administration**
+- Cacti
+- Prometheus
+- ELK Stack
+- SNMP
+- Metric Exporters
+- Custom Telemetry
+- Auto-Ticket & Call APIs
+- Monitoring architecture optimization
+
+### Automation & Integration
+
+- Network inventory synchronization
+- Network port inventory
+- Monitoring configuration
+- Automated ticketing
+- Calling API integration
+
+### Security & Master-Slave
+
+- Monitoring platform hardening
+- Access control
+- Security analysis
+- Polling infrastructure optimization
+- Distributed Multi-Poller architecture
+- Disk I/O bottleneck investigation
+
+### SLA / OLA Standardization
+
+Worked on standardizing SLA/OLA metrics across infrastructure divisions, including:
+
+- Data Center
+- Streaming Services
+- NOC / SOC
+- Network Backbone
+
+### Hardware & Data Center
+
+- Bare-metal servers
+- Server rack operations
+- Power cabling
+- Hardware sensors
+- Component replacement
+- VMware ToR networking
+- Console routing
+- Power / optical troubleshooting
+
+### Kubernetes & GitOps
+
+- Kubernetes application deployment
+- ArgoCD
+- Helm
+- GitOps
+- Monitoring requirements for newly deployed services
+
+### Operations & On-call
+
+- 24/7 operations
+- High-concurrency streaming service incidents
+- Weekly operational reports
+- Monitoring and infrastructure incident response
 
 ---
 
-> **Infrastructure is not just servers and networks — it's the system that keeps everything running.**
+# 🏠 Homelab
+
+I maintain a personal infrastructure lab for experimenting with virtualization, networking, self-hosting, and infrastructure operations.
+
+## Hardware
+
+- Proxmox VE
+- X99 platform
+- Intel Xeon 24-Core
+- 32 GB RAM
+
+## Infrastructure
+
+- Hardware virtualization
+- L2 / L3 switching
+- WiFi integration
+- Reverse SSH tunneling
+- Remote VPS
+- Secure Internet exposure
+
+The homelab is used to experiment with infrastructure concepts before applying them to larger environments.
+
+---
+
+# 🧰 Technical Stack
+
+| Category | Technologies |
+|---|---|
+| **Monitoring** | **CheckMK_MSP**, Cacti, Prometheus, ELK Stack, SNMP |
+| **Observability** | Metric Exporters, Custom Telemetry, Async Polling, Multi-Poller |
+| **Data Center** | Bare-metal, ToR, Rack Operations, Power, Optics, Hardware Sensors |
+| **Virtualization** | VMware ESXi, Proxmox VE |
+| **Containers** | Kubernetes, K3s, Docker, Docker Swarm |
+| **GitOps** | ArgoCD, Helm |
+| **CI/CD** | GitLab CI/CD |
+| **Automation** | Ansible |
+| **Networking** | L2/L3, ToR, Spine-Leaf, 3-Tier |
+| **Load Balancing** | HAProxy |
+| **Messaging** | RabbitMQ |
+| **Database** | PostgreSQL, Firebase, Supabase |
+| **Security** | BunkerWeb, ModSecurity, OWASP CRS |
+| **Security Analysis** | Ollama, Local LLM |
+| **Backend** | Node.js, REST API |
+| **Development** | Java OOP, Android |
+| **Homelab** | Proxmox VE, VMware, Virtualization, L2/L3 |
+
+---
+
+# 🎓 Education
+
+## University of Information Technology (UIT) — VNU HCM
+
+**Bachelor of Science in Information Technology**
+
+**Graduating 2026**
+
+### Graduation Thesis
+
+**Open-Source WAF with AI Security Analysis**
+
+Technologies:
+
+- BunkerWeb
+- ModSecurity
+- OWASP CRS
+- Ollama
+- Local LLM
+
+---
+
+## FPT Polytechnic College Da Nang
+
+**Associate Degree in Software Engineering**
+
+**2021 — 2024**
+
+### Capstone Project — Team Lead
+
+Full-stack mobile application using:
+
+- Android
+- Firebase
+- Supabase
+
+The project included a self-hosted Supabase backend for database management and real-time data synchronization.
+
+---
+
+# 📚 Certification Roadmap
+
+Currently preparing for infrastructure-oriented certifications:
+
+- 🎯 CKA — Certified Kubernetes Administrator
+- 🎯 CCNP — Cisco Certified Network Professional
+- 🎯 LFCS — Linux Foundation Certified System Administrator
+
+---
+
+# 🗺️ Engineering Focus
+
+My current engineering direction:
+
+```text
+Software Development
+        │
+        ▼
+     DevOps
+        │
+        ▼
+ Infrastructure
+        │
+        ├───────────────┐
+        ▼               ▼
+ Data Center       Kubernetes
+        │               │
+        └───────┬───────┘
+                ▼
+        Observability
+                │
+                ▼
+       Enterprise Systems
+                │
+                ▼
+       Reliable Infrastructure
+```
+
+I'm particularly interested in building and operating infrastructure that is:
+
+- **Observable**
+- **Automated**
+- **Scalable**
+- **Secure**
+- **Reliable**
+
+---
+
+# 📫 Contact
+
+📧 **Email:** dangthanhlam1312@gmail.com
+
+🔗 **LinkedIn:** linkedin.com/in/tlamabe
+
+---
+
+> **Infrastructure is not just about running servers.
+> It's about building systems that remain observable, scalable, secure, and reliable under real operational conditions.**
